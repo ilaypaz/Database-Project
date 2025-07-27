@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<!--(c) Saeed Mirjalili-->
+<!--Insert Data HTML file-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Insert Data Into a Database</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <form method="post" action="php/insertIntoValues.php">
+    <fieldset>
+      <legend>Enter the information of the student:</legend>
+
+      <label>Student SSN:</label>
+      <input type="text" name="ssn" maxlength="9" required /><br />
+
+      <label>Name:</label>
+      <input type="text" name="name" maxlength="25" required /><br />
+
+      <label>Start Registration Date:</label>
+      <input type="date" name="start_registration_date" required /><br />
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" required /><br />
+
+      <label>Major:</label>
+      <input type="text" name="major" maxlength="4" required /><br />
+
+      <label>Minor:</label>
+      <input type="text" name="minor" maxlength="4" /><br />
+
+      <label>Message Content:</label><br />
+      <textarea name="message_content" maxlength="100" rows="4" cols="40"></textarea><br />
+
+      <label>Advisor SSN:</label>
+      <input type="text" name="advisor_eid" maxlength="9" /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </fieldset>
+  </form>
+  <br />
+  <a href="index.html">Back to the homepage</a>
+</body>
+
+</html>
